@@ -21,7 +21,7 @@ const fetchCollection = async (collectionSlug) => {
 };
 
 const Dashboard = () => {
-  const [collectionSlug, setCollectionSlug] = useState('doodles-official');
+  const [collectionSlug, setCollectionSlug] = useState('otherdeed');
 
   const [state, setState] = useState({
     description: '',
@@ -76,7 +76,7 @@ const Dashboard = () => {
               <input
                 className="block w-full	rounded-md border border-slate-600  pl-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                 placeholder="Search items, collections, and accounts"
-                defaultValue={'doodles-official'}
+                defaultValue={'otherdeed'}
                 onChange={(event) => {
                   setCollectionSlug(event.target.value);
                 }}
